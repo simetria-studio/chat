@@ -21,7 +21,7 @@
     <meta name="description" content="Laravel messenger demo app by Richard Tippin. A full messenger suite for your new / existing laravel app! Private and group threads between multiple models, with real-time messaging, reactions, attachments, calling, chat bots, and more!">
     <meta name="keywords" content="laravel, demo, git, messenger, plugin, package, open, source, message, suite, php, javascript, bootstrap, framework, webrtc, tippin, jquery, MVC, ORM, OOP, discord, bots, calls, reactions" />
     <meta name="title" content="@yield('title', 'Messenger Demo')">
-    <title>@yield('title', 'Tippin\'s Messenger Demo')</title>
+    <title>@yield('title', 'Chat Project')</title>
     @auth
         <link id="main_css" href="{{ asset(mix(messenger()->getProviderMessenger()->dark_mode ? 'dark.css' : 'app.css', 'vendor/messenger')) }}" rel="stylesheet">
     @else

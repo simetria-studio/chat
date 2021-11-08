@@ -11,7 +11,7 @@
                                  class="my-global-avatar ml-1 rounded-circle medium-image avatar-is-{{\Illuminate\Support\Str::lower(\RTippin\Messenger\Contracts\MessengerProvider::ONLINE_STATUS[messenger()->getProvider()->getProviderOnlineStatus()])}}"
                                  src="{{messenger()->getProvider()->getProviderAvatarRoute()}}" />
                         </div>
-                        <span class="{{app('agent')->isMobile() ? '' : 'd-none d-md-inline'}} h4 font-weight-bold">Messenger</span>
+                        <span class="{{app('agent')->isMobile() ? '' : 'd-none d-md-inline'}} h4 font-weight-bold">Chat</span>
                         <div class="dropdown">
                             <button data-tooltip="tooltip" title="Messenger Options" data-placement="right" class="btn btn-lg text-secondary btn-light pt-1 pb-0 px-2 dropdown-toggle" data-toggle="dropdown"><i class="fas fa-cogs fa-2x"></i></button>
                             <div class="dropdown-menu dropdown-menu-right">

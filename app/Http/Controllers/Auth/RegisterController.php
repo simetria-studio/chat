@@ -112,27 +112,27 @@ class RegisterController extends Controller
 
         // Remove this method call if you do not want new
         // users to be setup with the admin account.
-        $this->setupUserWithDemo();
+        // $this->setupUserWithDemo();
     }
 
     /**
      * @throws Throwable
      * @throws InvalidProviderException|MessengerComposerException
      */
-    private function setupUserWithDemo(): void
-    {
-        $admin = User::whereEmail(DatabaseSeeder::Admin['email'])->first();
-        $group = Thread::group()->oldest()->first();
-        Friend::factory()->providers($admin, $this->newUser)->create();
-        Friend::factory()->providers($this->newUser, $admin)->create();
-        Participant::factory()->for($group)->owner($this->newUser)->create([
-            'start_calls' => true,
-            'send_knocks' => true,
-            'add_participants' => true,
-            'manage_invites' => true,
-        ]);
-        MessengerComposer::to($this->newUser)
-            ->from($admin)
-            ->message('Welcome to the messenger demo!');
-    }
+    // private function setupUserWithDemo(): void
+    // {
+    //     $admin = User::whereEmail(DatabaseSeeder::Admin['email'])->first();
+    //     $group = Thread::group()->oldest()->first();
+    //     Friend::factory()->providers($admin, $this->newUser)->create();
+    //     Friend::factory()->providers($this->newUser, $admin)->create();
+    //     Participant::factory()->for($group)->owner($this->newUser)->create([
+    //         'start_calls' => true,
+    //         'send_knocks' => true,
+    //         'add_participants' => true,
+    //         'manage_invites' => true,
+    //     ]);
+    //     MessengerComposer::to($this->newUser)
+    //         ->from($admin)
+    //         ->message('Welcome to the messenger demo!');
+    // }
 }

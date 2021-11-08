@@ -62,6 +62,9 @@
                #socket_error{
                    display: none;
                }
+               .thread_error_btn{
+                display: none; 
+               }
             </style>
 </wrapper>
 @include('messenger::scripts')

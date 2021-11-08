@@ -47,7 +47,7 @@ return [
         ],
         'threads' => [
             'disk' => 'public',
-            'directory' => 'storage/threads',
+            'directory' => 'threads',
         ],
     ],
 

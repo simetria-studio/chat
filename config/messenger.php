@@ -43,11 +43,11 @@ return [
     'storage' => [
         'avatars' => [
             'disk' => 'public',
-            'directory' => 'storage/images',
+            'directory' => 'images',
         ],
         'threads' => [
             'disk' => 'public',
-            'directory' => 'threads',
+            'directory' => 'storage/threads',
         ],
     ],
 

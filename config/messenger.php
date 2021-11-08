@@ -43,7 +43,7 @@ return [
     'storage' => [
         'avatars' => [
             'disk' => 'public',
-            'directory' => 'images',
+            'directory' => 'storage/images',
         ],
         'threads' => [
             'disk' => 'public',

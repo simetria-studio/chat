@@ -17,7 +17,7 @@ return [
     |
     */
     'websocket' => [
-        'pusher' => env('MESSENGER_SOCKET_PUSHER', true), //Set true if you are using the real pusher.com
+        'pusher' => env('MESSENGER_SOCKET_PUSHER', false), //Set true if you are using the real pusher.com
         'host' => env('MESSENGER_SOCKET_HOST', 'localhost'),
         'auth_endpoint' => env('MESSENGER_SOCKET_AUTH_ENDPOINT', '/api/broadcasting/auth'),
         'key' => env('MESSENGER_SOCKET_KEY'),

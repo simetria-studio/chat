@@ -58,6 +58,11 @@
                         @yield('content')
                     </div>
                 </main>
+            <style>
+               #socket_error{
+                   display: none;
+               }
+            </style>
 </wrapper>
 @include('messenger::scripts')
 </body>
